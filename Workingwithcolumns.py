@@ -22,3 +22,13 @@ cols =st.columns(n)
 for col in cols:
     with col:
         st.image('https://static.streamlit.io/examples/cat.jpg' , width= 200)
+
+
+# working with tabs 
+
+tab1 , tab2 =st.tabs(['cat', 'dog'])
+with tab1:
+    st.image('https://static.streamlit.io/examples/cat.jpg')
+
+with tab2:
+    st.image('https://static.streamlit.io/examples/dog.jpg')
